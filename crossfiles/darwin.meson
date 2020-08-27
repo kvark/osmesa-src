@@ -1,0 +1,18 @@
+[binaries]
+c = 'clang'
+c_ld = '/builds/worker/fetches/cctools/bin/x86_64-apple-darwin-ld'
+cpp = 'clang++'
+cpp_ld = '/builds/worker/fetches/cctools/bin/x86_64-apple-darwin-ld'
+ar = 'x86_64-apple-darwin-ar'
+pkgconfig = 'x86_64-apple-darwin-pkg-config'
+strip = 'x86_64-apple-darwin-strip'
+
+[properties]
+c_args = ['--target=x86_64-apple-darwin', '-mmacosx-version-min=10.7', '--sysroot=/builds/worker/fetches/MacOSX10.11.sdk']
+cpp_args = ['--target=x86_64-apple-darwin', '-mmacosx-version-min=10.7', '--sysroot=/builds/worker/fetches/MacOSX10.11.sdk', '-stdlib=libc++']
+
+[target_machine]
+system = 'darwin'
+cpu_family = 'x86_64'
+cpu = 'i686'
+endian = 'little'
